@@ -1,0 +1,21 @@
+\begin{tikzpicture}[scale = 1.5]
+    \draw[thick, -latex'] (-1.3, 0) -- (1.3, 0) node[above = 0] {Re};
+    \draw[thick, -latex'] (0, -1.3) -- (0, 1.3) node[right = 0] {Im};
+    \draw[thick, orange] (0, 0) circle(1);
+    
+    \path (0, -0.2) node[right = 0] {$O$};
+    \path (1, 0) node[below = 0] {\quad $1$};
+
+    %% poles
+    \draw[decorate, decoration = {crosses, shape size = 5pt}, thick, blue]
+        (0.683, 0);
+    \draw[decorate, decoration = {crosses, shape size = 5pt}, thick, blue]
+        (0.723, 0.5224);
+    \draw[decorate, decoration = {crosses, shape size = 5pt}, thick, blue]
+        (0.723, -0.5224);
+        
+    %% zeros
+    \draw[thick, blue] (-1, 0) circle(2pt);
+    \draw[thick, blue] (-0.5083, 0.8612) circle(2pt);
+    \draw[thick, blue] (-0.5083, -0.8612) circle(2pt);
+\end{tikzpicture}
