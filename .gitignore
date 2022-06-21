@@ -20,6 +20,7 @@
 *.toc
 */*.toc
 
+*.zip
 */*.zip
 
 *.npy
